@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".test">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/breakfastIcon"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/breakfastTV"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/croissant" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/breakfastTV"
+    android:text="@string/breakfast"
+    android:textStyle="bold"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:textSize="24sp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/breakfastCV"
+        android:layout_below="@+id/breakfastTV"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#fff4d4"
+        android:layout_margin="16dp"
+        app:cardElevation="15dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/breakfastMealName"/>
+    <ImageView
+        android:layout_margin="8dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/breakfastMealName"
+        android:src="@drawable/ftar"
+        android:id="@+id/breakfastMealImage"/>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/breakfastMealImage"
+        android:layout_below="@+id/breakfastMealName"
+        android:maxWidth="195dp"
+        android:text="sdjhfhdsfhsdfjhsdfjhsdjhfsdjhfjkhfdkgjhdfkjghdjkfshgjdshfghdfgjhdjfghjdfhgjdhsfkgjhdksfjgh
+dfgklnsdflgksdlfkgjlksdfglksdfhglkhdsflghsdlfhgsldfgsfdglkjdsf"
+        android:id="@+id/breakfastMealDescribtion"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breakfastMealDescribtion"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:text="Calories : 500"
+        android:id="@+id/breakfastMealCalories"/>
+    <ImageView
+        android:id="@+id/changeBreakfast"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="16dp"
+
+        app:srcCompat="@drawable/repeat" />
+
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/lunchIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/breakfastCV"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/lunchTV"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/lunch" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lunchTV"
+        android:text="Lunch"
+        android:layout_below="@+id/breakfastCV"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lunchTV"
+        android:id="@+id/lunchCV"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#fff4d4"
+        android:layout_margin="16dp"
+        app:cardElevation="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/lunchMealName"/>
+            <ImageView
+                android:layout_margin="8dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_below="@+id/lunchMealName"
+                android:src="@drawable/lun"
+                android:id="@+id/lunchMealImage"/>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:maxLines="5"
+                android:layout_toRightOf="@id/lunchMealImage"
+                android:layout_below="@+id/lunchMealName"
+                android:maxWidth="195dp"
+                android:text="sdjhfhdsfhsdfjhsdfjhsdjhfsdjhfjkhfdkgjhdfkjghdjkfshgjdshfghdfgjhdjfghjdfhgjdhsfkgjhdksfjgh
+dfgklnsdflgksdlfkgjlksdfglksdfhglkhdsflghsdlfhgsldfgsfdglkjdsf"
+                android:id="@+id/lunchMealDescribtion"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lunchMealDescribtion"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:text="Calories : 500"
+                android:id="@+id/lunchMealCalories"/>
+            <ImageView
+                android:id="@+id/changeLunch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="16dp"
+
+                app:srcCompat="@drawable/repeat" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/dinnerIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lunchCV"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/lunchTV"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dinner" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dinnerTV"
+        android:text="Dinner"
+        android:layout_below="@+id/lunchCV"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dinnerCV"
+        android:layout_below="@+id/dinnerTV"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#fff4d4"
+        android:layout_margin="16dp"
+        app:cardElevation="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/dinnerMealName"/>
+            <ImageView
+                android:layout_margin="8dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_below="@+id/dinnerMealName"
+                android:src="@drawable/dinn"
+                android:id="@+id/dinnerMealImage"/>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/dinnerMealImage"
+                android:layout_below="@+id/dinnerMealName"
+                android:maxWidth="195dp"
+                android:maxLines="5"
+                android:text="sdjhfhdsfhsdfjhsdfjhsdjhfsdjhfjkhfdkgjhdfkjghdjkfshgjdshfghdfgjhdjfghjdfhgjdhsfkgjhdksfjgh
+dfgklnsdflgksdlfkgjlksdfglksdfhglkhdsflghsdlfhgsldfgsfdglkjdsf"
+                android:id="@+id/dinnerMealDescribtion"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dinnerMealDescribtion"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:text="Calories : 500"
+                android:id="@+id/dinnerMealCalories"/>
+            <ImageView
+                android:id="@+id/changeDinner"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="16dp"
+
+                app:srcCompat="@drawable/repeat" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+

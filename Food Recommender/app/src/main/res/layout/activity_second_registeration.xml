@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondRegisteration">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/backToFirstReg"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <EditText
+        android:id="@+id/regWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedeeditext"
+        android:ems="10"
+        android:hint="Enter Your Weight"
+        android:inputType="numberSigned"
+        android:padding="10dp"
+        android:textColor="#b63c31" />
+
+    <EditText
+        android:id="@+id/regHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundedeeditext"
+        android:ems="10"
+        android:hint="Enter Your Height"
+        android:inputType="numberSigned|number"
+        android:padding="10dp"
+        android:textColor="#b63c31" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="You want to ? "/>
+    <Spinner
+        android:id="@+id/plan"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="50dp"
+        android:layout_gravity="center_horizontal"
+        android:entries="@array/plan">
+
+    </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="you Suffer From ? "/>
+    <Spinner
+        android:id="@+id/disease"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="50dp"
+        android:layout_gravity="center_horizontal"
+        android:entries="@array/diseases">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Your activity level ? "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/activity"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="50dp"
+        android:entries="@array/activity">
+
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Choose your food type "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/any"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any Thing" />
+
+        <RadioButton
+            android:id="@+id/Vegetarian"
+            android:layout_marginLeft="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vegetarian" />
+    </RadioGroup>    <Button
+        android:id="@+id/Next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="32dp"
+        android:layout_marginTop="30dp"
+        android:text="Next"
+        android:background="@drawable/roundedbttn"
+        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/s" />
+</LinearLayout>
+</ScrollView>
